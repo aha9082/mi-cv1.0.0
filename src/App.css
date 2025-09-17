@@ -1,0 +1,52 @@
+html, body, #root, .App {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: black;
+}
+
+.content {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.emoji {
+  font-size: 80px;
+  animation: wave 2s infinite;
+}
+
+.btn-lila {
+  background-color: #b97cf7;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+   width: 15%;
+}
+
+.espacio {
+  height: 100px;   /* altura del espacio */
+}
+
+.caja {
+  width: 200px;
+  height: 100px;
+  background: rgb(8, 136, 179);
+
+  margin: 50px; /* deja 50px de espacio en todos los lados */
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(20deg); }
+  20% { transform: rotate(-10deg); }
+  30% { transform: rotate(15deg); }
+  40% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
